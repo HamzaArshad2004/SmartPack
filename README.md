@@ -52,14 +52,12 @@ Many people struggle with packing for trips, often forgetting essential items or
 
 
 ## API Integration
-SmartPack integrates with the Weatherstack API to provide weather-related packing suggestions based on the user's destination and travel dates. The API is used to fetch weather forecasts, which helps users consider weather conditions when packing.
+SmartPack integrates with the Weatherstack API and OpenAI API to provide weather-related packing suggestions based on the user's destination and travel dates. The Weatherstack API is used to fetch weather forecasts, which are then provided in the prompts sent to OpenAI's LLM to generate a relevant packing list.
 
 ## How the API is Integrated
 The application makes a GET request to the Weatherstack API to retrieve weather data and OpenAI to dyamically generate a recommended packing list
 Based on the weather forecast, the application dynamically adjusts the suggested packing items (e.g., recommending umbrellas for rainy forecasts).
 The API keys are stored securely in an environment variable to protect sensitive information.
-
-
 
 ## Credits
 This project utilizes AI-generated code to assist in the development process. The AI helped in the following areas:
